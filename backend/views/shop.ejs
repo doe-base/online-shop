@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <section id="gallery">
+        <h2>GALLERY</h2>
+
+        <div id="nav"> 
+            
+        </div>
+        <section id="gallery-display">
+            <div class="heading">
+              <h3 id="title-el">All Collection</h3>
+              <div class="line"></div>
+            </div>
+
+            <% if (shops.length > 0) { %>
+                <% shops.forEach(shop => { %>
+                    <a class="glightbox" href="shops/<%= shop._id %>">
+                        <div class="img-div">
+                            <img src="<%- shop.image%>" alt="<%= name%>">
+                            <div class="price">
+                                <%= shop.price %>
+                            </div>
+                            <div class="product-name">
+                                <%= shop.name %>
+                            </div>
+                        </div>
+                    </a> 
+               <% }) %>
+           <% }else{ %>
+            <p>there are no item to display</p>
+        <% } %>
+
+    </section>
+</body>
+</html>

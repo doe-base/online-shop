@@ -1,0 +1,22 @@
+{
+  "name": "e-shop",
+  "version": "1.0.0",
+  "description": "express powered e-shop",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "doe idoko",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "gridfs-stream": "^1.1.1",
+    "mongoose": "^6.2.4",
+    "multer": "^1.4.4",
+    "multer-gridfs-storage": "^5.0.2",
+    "util": "^0.12.4"
+  }
+}
